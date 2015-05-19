@@ -1,7 +1,7 @@
 package util
 
 import (
-	"github.com/headzoo/ut"
+	"github.com/cornerot/ut"
 	"testing"
 )
 

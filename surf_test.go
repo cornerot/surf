@@ -3,8 +3,8 @@ package surf
 import (
 	"bytes"
 	"fmt"
-	"github.com/headzoo/surf/jar"
-	"github.com/headzoo/ut"
+	"github.com/cornerot/surf/jar"
+	"github.com/cornerot/ut"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -124,7 +124,7 @@ func TestHeaders(t *testing.T) {
 }
 
 // TestHeadersSet
-// See: https://github.com/headzoo/surf/pull/19
+// See: https://github.com/cornerot/surf/pull/19
 func TestHeadersBug19(t *testing.T) {
 	ut.Run(t)
 	ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {

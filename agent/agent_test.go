@@ -2,7 +2,7 @@ package agent
 
 import (
 	"fmt"
-	"github.com/headzoo/ut"
+	"github.com/cornerot/ut"
 	"runtime"
 	"testing"
 )

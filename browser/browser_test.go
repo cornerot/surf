@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/headzoo/surf/agent"
-	"github.com/headzoo/surf/jar"
+	"github.com/cornerot/surf/agent"
+	"github.com/cornerot/surf/jar"
 )
 
 func newDefaultTestBrowser() *Browser {
@@ -27,7 +27,7 @@ func newDefaultTestBrowser() *Browser {
 }
 
 // TestRedirect
-// See: https://github.com/headzoo/surf/pull/18
+// See: https://github.com/cornerot/surf/pull/18
 func TestRedirect(t *testing.T) {
 	ts0 := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		switch r.URL.Path {
